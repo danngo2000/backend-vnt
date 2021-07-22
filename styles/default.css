@@ -1,0 +1,8 @@
+:root {
+    --main-font-color: #333;
+    --light-font-color: #808080;
+    --top-bar-height: 2rem;
+    --main-bar-height: 6.9rem;
+    --body-bg-color: #fefefe;
+    --main-bar-height-mobile: 5rem;
+}
