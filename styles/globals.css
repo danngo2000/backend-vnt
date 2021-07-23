@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@import "default.css";
+
+@import "./components/header.css"
