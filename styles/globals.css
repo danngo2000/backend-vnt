@@ -15,6 +15,12 @@ a {
   box-sizing: border-box;
 }
 
-@import "default.css";
+@import 'default.css';
 
-@import "./components/header.css"
+@import './components/header.css';
+
+@import './layouts/sidebar.css';
+
+@import './layouts/main.css';
+
+@import './core/material-ui.css';

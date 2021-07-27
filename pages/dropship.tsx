@@ -2,21 +2,19 @@ import React from 'react'
 import Layout from '../components/Layout/Layout'
 import SideBar from '../components/Layout/SideBar'
 
-const Home = () => {
+const dropship = () => {
   return (
     <Layout>
-      <SideBar />
-      <h1>Hello, Let's build Admin</h1>
+      <SideBar fill='dropship' />
+      <h1>Dropship</h1>
     </Layout>
   )
 }
 
 export const getServerSideProps = () => {
   return {
-    props: {
-      
-    }
+    props: {}
   }
 }
 
-export default Home
+export default dropship

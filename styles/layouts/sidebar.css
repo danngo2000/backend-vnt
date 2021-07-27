@@ -1,0 +1,12 @@
+.app-left-slider {
+  background: #666;
+  position: relative;
+  padding-right: 0;
+}
+.left-sider-content {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  border-right: 1px solid #f0ecec;
+  /* padding: 5px; */
+}

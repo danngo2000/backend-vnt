@@ -6,3 +6,11 @@
     --body-bg-color: #fefefe;
     --main-bar-height-mobile: 5rem;
 }
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
