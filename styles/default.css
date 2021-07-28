@@ -1,16 +1,33 @@
 :root {
-    --main-font-color: #333;
-    --light-font-color: #808080;
-    --top-bar-height: 2rem;
-    --main-bar-height: 6.9rem;
-    --body-bg-color: #fefefe;
-    --main-bar-height-mobile: 5rem;
+  --main-font-color: #333;
+  --light-font-color: #808080;
+  --top-bar-height: 2rem;
+  --main-bar-height: 6.9rem;
+  --body-bg-color: #fefefe;
+  --main-bar-height-mobile: 5rem;
 }
 
-ul, li {
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #c0c0c0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #808080;
+}
+.MuiDataGrid-root .MuiDataGrid-columnsContainer {
+    background-color: #f8f8f8;
 }

@@ -19,6 +19,7 @@ import {
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp'
 import LocalOfferIcon from '@material-ui/icons/LocalOffer'
+import SearchIcon from '@material-ui/icons/Search'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -38,11 +39,10 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     root: {
       margin: 'auto',
-      backgroundColor: 'rgba(138,155,168,.15)',
+      background: 'none',
       boxShadow: 'none',
       color: '#000',
-      fontSize: 16,
-      padding: '0 20px',
+      fontSize: 17,
     },
     paper: {
       maxHeight: '30rem',
@@ -66,7 +66,30 @@ const Index = () => {
   const [tags] = React.useState<any>([
     { id: 1, value: 'Rice', qty: 3, tag: 'Processed' },
     { id: 2, value: 'Instandt Noodles', qty: 8, tag: 'Listed' },
-    { id: 3, value: 'upprice', qty: 19, tag: 'Bin' }
+    { id: 3, value: 'Upprice', qty: 19, tag: 'Bin' },
+    { id: 4, value: 'Tiffany', qty: 11, tag: 'Bin' },
+    { id: 5, value: 'Recheck', qty: 62, tag: 'Bin' },
+    { id: 6, value: 'Ngoc', qty: 13, tag: 'Bin' },
+    { id: 7, value: 'Noodles', qty: 0, tag: 'Bin' },
+    { id: 8, value: 'Condiments', qty: 3, tag: 'Bin' },
+    { id: 9, value: 'Seasoning Sauces', qty: 2, tag: 'Bin' },
+    { id: 10, value: 'MoreTolove', qty: 28, tag: 'Bin' },
+    { id: 11, value: 'Linh', qty: 1, tag: 'Bin' },
+    { id: 12, value: 'Small', qty: 0, tag: 'Bin' },
+    { id: 13, value: 'Out of stock', qty: 137, tag: 'Bin' },
+    { id: 14, value: 'Flash Sale', qty: 19, tag: 'Bin' },
+    { id: 15, value: 'Tofu', qty: 0, tag: 'Bin' },
+    { id: 16, value: 'Seller', qty: 7, tag: 'Bin' },
+    { id: 17, value: 'Single', qty: 1, tag: 'Bin' },
+    { id: 18, value: 'Hailey', qty: 0, tag: 'Bin' },
+    { id: 19, value: 'Big', qty: 0, tag: 'Bin' },
+    { id: 20, value: 'Processed', qty: 6, tag: 'Bin' },
+    { id: 21, value: 'Listed', qty: 6, tag: 'Bin' },
+    { id: 22, value: 'Bin', qty: 6, tag: 'Bin' },
+    { id: 23, value: 'Flash-sale', qty: 0, tag: 'Bin' },
+    { id: 24, value: 'Out-of-stock', qty: 0, tag: 'Bin' },
+    { id: 25, value: 'tet2021', qty: 11, tag: 'Bin' },
+    { id: 26, value: 'NEED TO DELATE', qty: 1, tag: 'Bin' }
   ])
 
   const handleClick = () => {
@@ -148,11 +171,26 @@ const Index = () => {
             </div>
           </Collapse>
         </LeftSidebar>
-        <div className='body-main' style={{ width: '100%' }}>
-          <div>
+        <div className='body-main'>
+          <div className='header-product'>
             <AppBar className={classes.root} position='static'>
               <h4>All Product</h4>
             </AppBar>
+            <div className='search'>
+              <div className='fill'>
+                <div className='control-group'>
+                  <div className='input-group product-search'>
+                    <input type='text' className='input' />
+                    <span className='input-action'>
+                      <SearchIcon />
+                    </span>
+                  </div>
+                  <button type='button' className='button advancedSearch'>
+                    <span className='button-text'>Show Advanced Search</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
           <TableProducts />
         </div>

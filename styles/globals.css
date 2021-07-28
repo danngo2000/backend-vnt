@@ -24,3 +24,5 @@ a {
 @import './layouts/main.css';
 
 @import './core/material-ui.css';
+
+@import './components/product.css';

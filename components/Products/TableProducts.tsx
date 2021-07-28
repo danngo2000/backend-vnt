@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { DataGrid, GridColDef } from '@material-ui/data-grid'
-import { Link } from '@material-ui/core'
 import { navigate } from '@reach/router'
 
 const LinkRenderer = (props: any) => {
@@ -32,7 +31,7 @@ const columns: GridColDef[] = [
     editable: true,
     renderCell: ThumnailRenderer
   },
-  { field: 'name', headerName: 'Name', width: 200, editable: true },
+  { field: 'name', headerName: 'Name', width: 230, editable: true },
   {
     field: 'sku',
     headerName: 'SKU',
@@ -194,7 +193,7 @@ const rows = [
 
 export default function TableProducts() {
   return (
-    <div style={{ height: 800, width: '100%' }}>
+    <div style={{ height: 850, width: '100%' }}>
       <DataGrid
         rows={rows} /*data*/
         columns={columns} /*header*/
